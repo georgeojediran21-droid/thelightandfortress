@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - The Light and Fortress Alliance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand brand" href="index.html"><img src="ChatGPT Image Jun 18, 2026, 01_53_04 AM.png" alt="The Light and Fortress Alliance logo"><span>The Light and<br>Fortress Alliance</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                
+                    <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link nav-notification" href="notification.html">Notifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" data-logout>Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <p class="eyebrow">Member area</p>
+                <h1>Dashboard</h1>
+                <p>Read updates, notifications, and shared media from the alliance.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div id="dashboard"></div>
+            <div class="row g-4 mt-2" data-admin-only hidden>
+                <div class="col-lg-6">
+                    <form id="updateForm" class="form-panel card shadow-sm">
+                        <h2>Post an update</h2>
+                        <div id="updateMessage"></div>
+                        <label class="form-label">Title</label>
+                        <input class="form-control mb-3" name="title" required>
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control mb-3" name="message" rows="4" required></textarea>
+                        <button class="btn" type="submit">Post Update</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <form id="uploadForm" class="form-panel card shadow-sm" enctype="multipart/form-data">
+                        <h2>Upload image or video</h2>
+                        <div id="uploadMessage"></div>
+                        <label class="form-label">Title</label>
+                        <input class="form-control mb-3" name="title" required>
+                        <label class="form-label">Media file</label>
+                        <input class="form-control mb-3" type="file" name="media" accept="image/*,video/*" required>
+                        <button class="btn" type="submit">Upload Media</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row g-4 mt-2 dashboard-grid">
+                <div class="col-lg-4"><section class="workspace-panel"><h2>Notifications</h2><div id="notificationsList" class="copy-stack"></div></section></div>
+                <div class="col-lg-4"><section class="workspace-panel"><h2>Updates</h2><div id="updatesList" class="copy-stack"></div></section></div>
+                <div class="col-lg-4"><section class="workspace-panel"><h2>Uploads</h2><div id="uploadsList" class="copy-stack"></div></section></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

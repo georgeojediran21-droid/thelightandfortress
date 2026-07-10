@@ -1,0 +1,13 @@
+{
+  "name": "the-light-and-fortress",
+  "version": "1.0.0",
+  "description": "The Light and Fortress Alliance website with member backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  },
+  "private": true
+}

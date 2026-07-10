@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - The Light and Fortress Alliance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand brand" href="index.html"><img src="ChatGPT Image Jun 18, 2026, 01_53_04 AM.png" alt="The Light and Fortress Alliance logo"><span>The Light and<br>Fortress Alliance</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
+                
+                    <li class="nav-item" data-auth-nav></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <section class="login-shell register-shell">
+            <div class="login-visual" aria-hidden="true">
+                <div class="login-visual-content">
+                    <img src="ChatGPT Image Jun 18, 2026, 01_53_04 AM.png" alt="">
+                    <p class="eyebrow">Join the alliance</p>
+                    <h1>Create your member profile</h1>
+                    <p>Register to appear in the member directory, access the dashboard, and stay connected with alliance updates.</p>
+                </div>
+            </div>
+
+            <div class="login-panel">
+                <div class="login-card register-card">
+                    <div class="login-card-heading">
+                        <p class="eyebrow">Registration</p>
+                        <h2>Become a member</h2>
+                        <p>Fill in your details below. The first registered account becomes the admin account.</p>
+                    </div>
+                    <div id="registerMessage"></div>
+                    <form id="registerForm" enctype="multipart/form-data">
+                        <div class="row g-3">
+                            <div class="col-md-6 field-group"><label class="form-label">Full name</label><input class="form-control" name="name" autocomplete="name" required></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Email</label><input class="form-control" type="email" name="email" autocomplete="email" required></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Password</label><input id="registerPassword" class="form-control" type="password" name="password" autocomplete="new-password" required></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Phone</label><input class="form-control" name="phone" autocomplete="tel"></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Location</label><input class="form-control" name="location" autocomplete="address-level2"></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Role</label><input class="form-control" name="role" placeholder="Volunteer, Advocate, Member"></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Profile picture</label><input class="form-control" type="file" name="profilePicture" accept="image/*"></div>
+                            <div class="col-md-6 field-group"><label class="form-label">Visibility</label><select class="form-select" name="visibility"><option value="public">Visible to other members</option><option value="private">Private</option></select></div>
+                            <div class="col-12 field-group"><label class="form-label">What is your intention to become a member</label><textarea class="form-control" name="bio" rows="4"></textarea></div>
+                        </div>
+                        <label class="login-check">
+                            <input type="checkbox" id="showRegisterPassword">
+                            <span>Show password</span>
+                        </label>
+                        <button class="btn login-submit" type="submit">Create Account</button>
+                        <p class="login-register">Already registered? <a href="login.html">Login here</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

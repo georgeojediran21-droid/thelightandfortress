@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Light and Fortress Alliance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand brand" href="index.html"><img src="ChatGPT Image Jun 18, 2026, 01_53_04 AM.png" alt="The Light and Fortress Alliance logo"><span>The Light and<br>Fortress Alliance</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <section class="login-shell">
+            <div class="login-visual" aria-hidden="true">
+                <div class="login-visual-content">
+                    <img src="ChatGPT Image Jun 18, 2026, 01_53_04 AM.png" alt="">
+                    <p class="eyebrow">Member portal</p>
+                    <h1>Welcome back</h1>
+                    <p>Access alliance updates, member resources, notifications, and the admin panel when permitted.</p>
+                </div>
+            </div>
+
+            <div class="login-panel">
+                <div class="login-card">
+                    <div class="login-card-heading">
+                        <p class="eyebrow">Login</p>
+                        <h2>Sign in to continue</h2>
+                        <p>Use your registered member email and password.</p>
+                    </div>
+                    <div id="loginMessage"></div>
+                    <form id="loginForm">
+                        <div class="field-group">
+                            <label class="form-label" for="loginEmail">Email</label>
+                            <input id="loginEmail" class="form-control" type="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="field-group">
+                            <label class="form-label" for="loginPassword">Password</label>
+                            <input id="loginPassword" class="form-control" type="password" name="password" autocomplete="current-password" required>
+                        </div>
+                        <label class="login-check">
+                            <input type="checkbox" id="showPassword">
+                            <span>Show password</span>
+                        </label>
+                        <div class="login-links">
+                            <a href="forgot-password.html">Forgot password?</a>
+                        </div>
+                        <button class="btn login-submit" type="submit">Login</button>
+                        <p class="login-register">New member? <a href="register.html">Create an account</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
